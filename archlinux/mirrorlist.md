@@ -20,13 +20,15 @@ $ awk '/^## Country Name$/{f=1; next}f==0{next}/^$/{exit}{print substr($0, 1);}'
 To uncomment every mirror, run the following sed line: 
 
 ```bash
-# sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
+#
+sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
 ```
 
 Finally, rank the mirrors, here with the operand -n 6 to only output the 6 fastest mirrors: 
 
 ```bash
-# rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+#
+rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 ```
 
 ## Fetching and ranking a live mirror list
