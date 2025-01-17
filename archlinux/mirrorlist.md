@@ -3,7 +3,8 @@
 > ranking existing mirrorlist
 
 ```bash
-# cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+#
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
 
 ```
 
