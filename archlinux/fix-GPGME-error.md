@@ -3,7 +3,7 @@
 
 to fix the pacman error where the database is out of sync:
 
-```bash
+```shell
 sudo rm /var/lib/pacman/sync/*
 sudo rm /var/lib/pacman/sync/* -rf
 reboot
@@ -11,6 +11,6 @@ reboot
 
 > after rebooting, just update the system.  
 
-```bash
+```shell
  sudo pacman -Syu
 ```
