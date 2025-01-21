@@ -1,4 +1,4 @@
-# Quick start
+	# Quick start
 
 ## creating and nesting components 
 
@@ -28,3 +28,5 @@ React components can be nested into each other:
 ```
 
 > React component names must start with UPPERCASE/CAPITAL letters.
+
+ 
