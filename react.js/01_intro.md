@@ -2,7 +2,7 @@
 
 ## creating and nesting components 
 
-React components are javascript functions that return markup:
+React components are JavaScript functions that return markup:
 
 ```jsx
 

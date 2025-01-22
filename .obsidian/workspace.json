@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "8d488bc9d56cda16",
+    "type": "split",
+    "children": [
+      {
+        "id": "1fa12a14aa2f4598",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c71fc90e6c8fe39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "archlinux/pacman/fix-GPGME-error.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "fix-GPGME-error"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "903bcbdfe2937772",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd58f922506bacef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4898e6feed5ab433",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3f36673d18477534",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9e9a342f3c1723cb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0109bcf1dbc58fea",
+    "type": "split",
+    "children": [
+      {
+        "id": "77fee7c5bea8a8f0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c973774f7eb97a8a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "archlinux/pacman/fix-GPGME-error.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for fix-GPGME-error"
+            }
+          },
+          {
+            "id": "fa8879d077861a3d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "archlinux/pacman/fix-GPGME-error.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from fix-GPGME-error"
+            }
+          },
+          {
+            "id": "1317ff69d0488ab6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "70beb43d5bd6fa83",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "archlinux/pacman/fix-GPGME-error.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of fix-GPGME-error"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7c71fc90e6c8fe39",
+  "lastOpenFiles": [
+    "archlinux/pacman/mirrorlist.md",
+    "archlinux/pacman/fix-GPGME-error.md",
+    "shell/zsh.md",
+    "react.js/01_intro.md"
+  ]
+}
