@@ -57,7 +57,7 @@ swapon /dev/swap-partition
 
 ### Update mirrorlist
 
-```bash
+```shell
 
 sudo pacman -Sy
 sudo pacman -S pacman-contrib
