@@ -8,7 +8,7 @@ Before installing, it would be advised to view the [FAQ](https://wiki.archlinux.
 
 ## 1. Pre installation
 
-## connect to the internet
+### connect to the internet
 
 ```bash
 
@@ -27,11 +27,11 @@ exit
 
 ```
 
-## Partition the disks
+### Partition the disks
 
 > partition the disks using gptfdisk 
 
-## Format the partitions 
+### Format the partitions 
 
 ```bash
 
@@ -43,7 +43,7 @@ mkswap /dev/swap-partition
 
 ```
 
-## Mount the file systems
+### Mount the file systems
 
 ```bash
 
@@ -55,7 +55,7 @@ swapon /dev/swap-partition
 
 ```
 
-## Update mirrorlist
+### Update mirrorlist
 
 ```bash
 
@@ -68,5 +68,14 @@ rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 
 ```
 
+## Installation
+
+### Install essential packages
+
+```bash
+
+pacstrap -K /mnt base linux linux-firmware base-devel
+
+```
 
 
