@@ -10,7 +10,7 @@ Before installing, it would be advised to view the [FAQ](https://wiki.archlinux.
 
 ## connect to the internet
 
-```shell
+```bash
 
 iwctl
 
@@ -33,7 +33,7 @@ exit
 
 ## Format the partitions 
 
-```shell
+```bash
 
 mkfs.fat -F 32 /dev/esp
 
@@ -45,13 +45,26 @@ mkswap /dev/swap-partition
 
 ## Mount the file systems
 
-```shell
+```bash
 
 mount /dev/root-partition
 
 mount --mkdir /dev/esp /mnt/boot
 
 swapon /dev/swap-partition
+
+```
+
+## Update mirrorlist
+
+```bash
+
+sudo pacman -Sy
+sudo pacman -S pacman-contrib
+
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+
+rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 
 ```
 
