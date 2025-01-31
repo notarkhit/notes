@@ -77,5 +77,19 @@ rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 pacstrap -K /mnt base linux linux-firmware base-devel
 
 ```
+## Configure the system
+
+### Fstab
+
+```bash
+genfstab -U -p /mnt >> /mnt/etc/fstab
+```
+
+### Chroot
+change root into the new system
+
+```bash
+arch-chroot /mnt 
+```
 
 
