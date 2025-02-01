@@ -117,3 +117,36 @@ hwclock --systohc --utc
 ```bash
 echo "hostname" > /etc/hostname
 ```
+
+### enable fstrim for ssd
+
+```bash
+systemctl enable fstrim.timer
+```
+
+### enable 32 bin suppoet
+
+> uncommnet multilib from /etc/pacman.conf then synchronize database
+
+### SET ROOT PASSWORD and add user
+
+```bash
+# set root password
+passwd
+
+#add user
+useradd -m -g users -G wheel,storage,power -s /bin/bash username
+passwd usename
+```
+
+### edit sudoers file
+
+> uncomment wheel
+
+### install bootloader
+
+verify boot mode
+
+```bash
+mount -t efivarfs efivarfs
+```
