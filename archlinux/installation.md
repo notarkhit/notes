@@ -207,9 +207,17 @@ add the following modules in this specific order to mkinitcpio.conf
 MODULES = (nvidia nvidia_modeset nvidia_uvm nvidia_drm )
 ```
 
+### Edit /boot/loader/entries/arch.conf
+add this afer rw in options
+
+```
+options = root=PARTUUID={root partition uuid} rw nvidia-drm.modeset=1
+```
+
 ### pacman hooks for nvidia
 
 ```bash
+mkdir /etc/pacman.d/hooks/
 vim /etc/pacman.d/hooks/nvidia.hook
 ```
 
@@ -236,4 +244,11 @@ NeedsTargets
 Exec=/bin/sh -c 'while read -r trg; do case $trg in linux*) exit 0; esac; done; /usr/bin/mkinitcpio -P'
 ```
 
+## boot into the system
+
+```bash
+exit
+umount -R /mnt
+reboot
+```
 
