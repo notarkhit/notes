@@ -91,5 +91,29 @@ change root into the new system
 ```bash
 arch-chroot /mnt 
 ```
+### generate locale
 
+```bash
+vim /etc/locale.gen
+```
+uncomment en_US.UTF-8 UTF-8
 
+```bash
+locale-gen
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+export LANG=en_US.UTF-8
+```
+
+### set timezones
+
+```bash
+ln -s /usr/share/zoneinfo/Asia/Kolkata > /etc/localtime
+
+hwclock --systohc --utc
+
+```
+### set hostname
+
+```bash
+echo "hostname" > /etc/hostname
+```
