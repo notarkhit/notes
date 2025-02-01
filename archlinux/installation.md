@@ -148,5 +148,40 @@ passwd usename
 verify boot mode
 
 ```bash
-mount -t efivarfs efivarfs
+mount -t efivarfs efivarfs /sys/firmware/efi/efivars/
+ls /sys/firmware/efi/efivars/
+```
+
+install bootloader
+
+```bash
+vim /boot/loader/entries/arch.conf
+```
+
+> add the following to arch.conf
+
+title Arch
+linux /vmlinux-linux
+initrd /initramfs-linux.img
+
+>add root partuuid  to arch.conf
+
+```bash
+echo "options root=PARTUUID=$(blkid -s PARTUUID -o value /dev/root-partition) rw" >> /boot/loader/entries/arch.conf
+```
+
+### configure internet
+
+enable dhcpcd
+
+```bash
+ sudo pacman -S dhcpcd
+ sudo systemctl enable dhcpcd@wlan0.service
+```
+
+enable network manager
+
+```bash
+sudo pacman -S networkmanager
+sudo systemctl enable networkmanager.service
 ```
