@@ -11,3 +11,12 @@ additional packages
 
 xdg-desktop-portal-hyprland
 
+hyprland-qt-support
+
+hyprgraphics
+
+### must have
+
+dunst
+pipewire, wireplumber
+
