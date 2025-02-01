@@ -36,9 +36,7 @@ exit
 ```bash
 
 mkfs.fat -F 32 /dev/esp
-
 mkfs.ext4 /dev/root-partition
-
 mkswap /dev/swap-partition
 
 ```
@@ -68,7 +66,7 @@ rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 
 ```
 
-## Installation
+## 2. Installation
 
 ### Install essential packages
 
@@ -77,7 +75,7 @@ rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 pacstrap -K /mnt base linux linux-firmware base-devel
 
 ```
-## Configure the system
+## 3. Configure the system
 
 ### Fstab
 
@@ -124,7 +122,7 @@ echo "hostname" > /etc/hostname
 systemctl enable fstrim.timer
 ```
 
-### enable 32 bin suppoet
+### enable 32 bin support
 
 > uncommnet multilib from /etc/pacman.conf then synchronize database
 
@@ -244,7 +242,7 @@ NeedsTargets
 Exec=/bin/sh -c 'while read -r trg; do case $trg in linux*) exit 0; esac; done; /usr/bin/mkinitcpio -P'
 ```
 
-## boot into the system
+## 4. Reboot
 
 ```bash
 exit
