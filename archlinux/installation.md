@@ -194,11 +194,7 @@ sudo pacman -S linux-headers
 sudo pacman -S nvidia-dkms libglvnd nvidia-utils opencl-nvidia lib32-libglvn lib-32-nvidia-utils lib32-opencl-nvidia nvidia-settings
 ```
 
-### pacman hook for nvidia
-
-```bash
-vim /etc/pacman.d/hooks/nvidia.hook
-```
+### Add mkinitcpio modules
 
 > edit mkinitcpio.conf 
 
@@ -209,6 +205,12 @@ add the following modules in this specific order to mkinitcpio.conf
 
 ```ini
 MODULES = (nvidia nvidia_modeset nvidia_uvm nvidia_drm )
+```
+
+### pacman hooks for nvidia
+
+```bash
+vim /etc/pacman.d/hooks/nvidia.hook
 ```
 
 > add the following update hooks to /etc/pacman.d/hooks/nvidia.hook
