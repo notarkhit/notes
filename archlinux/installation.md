@@ -185,3 +185,10 @@ enable network manager
 sudo pacman -S networkmanager
 sudo systemctl enable networkmanager.service
 ```
+
+### Install and configure nvidia drivers
+
+```bash
+sudo pacman -S nvidia-dkms libglvnd nvidia-utils opencl-nvidia lib32-
+```
+
