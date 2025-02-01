@@ -1,4 +1,4 @@
-# Arch linux install guide
+# Arch linux installation guide
 
 > This is a guide for my own reference for a more detailed guide go to the [Archlinux installation guide](https://wiki.archlinux.org/title/Installation_guide)
 
@@ -189,7 +189,9 @@ sudo systemctl enable networkmanager.service
 ### Install and configure nvidia drivers
 
 ```bash
-sudo pacman -S nvidia-dkms libglvnd nvidia-utils opencl-nvidia lib32-libglvnd
+sudo pacman -S linux-headers
+
+sudo pacman -S nvidia-dkms libglvnd nvidia-utils opencl-nvidia lib32-libglvn lib-32-nvidia-utils lib32-opencl-nvidia nvidia-settings
 ```
 
 ### pacman hook for nvidia
@@ -197,6 +199,18 @@ sudo pacman -S nvidia-dkms libglvnd nvidia-utils opencl-nvidia lib32-libglvnd
 ```bash
 vim /etc/pacman.d/hooks/nvidia.hook
 ```
+
+> edit mkinitcpio.conf 
+
+```bash
+vim /etc/mkinitcpio.conf
+```
+add the following modules in this specific order to mkinitcpio.conf
+
+```ini
+MODULES = (nvidia nvidia_modeset nvidia_uvm nvidia_drm )
+```
+
 > add the following update hooks to /etc/pacman.d/hooks/nvidia.hook
 
 ```ini
