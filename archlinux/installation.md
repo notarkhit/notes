@@ -113,7 +113,7 @@ export LANG=en_US.UTF-8
 ### set timezones
 
 ```bash
-ln -s /usr/share/zoneinfo/Asia/Kolkata > /etc/localtime
+ln -s /usr/share/zoneinfo/Asia/Kolkata  /etc/localtime
 
 hwclock --systohc --utc
 
