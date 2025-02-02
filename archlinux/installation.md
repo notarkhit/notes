@@ -31,6 +31,14 @@ exit
 
 > partition the disks using gptfdisk 
 
+#### Pertitioning schme
+
+| Partition | Size             |
+|-----------|------------------|
+| /boot     |1GiB              |
+| swap      |16GiB             |
+| / (root)  |Remaining Space   |
+
 ### Format the partitions 
 
 ```bash
