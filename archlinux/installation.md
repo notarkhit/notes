@@ -33,11 +33,11 @@ exit
 
 #### Pertitioning schme
 
-| Partition | Size             |
-|-----------|------------------|
-| /boot     |1GiB              |
-| swap      |16GiB             |
-| / (root)  |Remaining Space   |
+| Partition | Partition           | Size             | File System          |
+|-----------|---------------------|------------------|----------------------|
+| /boot     | /dev/esp            | 1 GiB              | EFI System Partition |
+| swap      | /dev/swap-partition | 16 GiB             | Linux Swap           |
+| / (root)  | /dev/root-partition | Remaining Space   | Linux File System    |
 
 ### Format the partitions 
 
