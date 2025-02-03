@@ -1,5 +1,6 @@
 # fix GPGME ERROR in pacman
 
+> this can also happen on a new archlinux [[installation]]
 
 to fix the pacman error where the database is out of sync:
 
@@ -14,3 +15,4 @@ reboot
 ```shell
  sudo pacman -Syu
 ```
+
