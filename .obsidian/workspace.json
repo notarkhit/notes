@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archlinux/pacman/fix-GPGME-error.md",
+                "file": "archlinux/installation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fix-GPGME-error"
+              "title": "installation"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -164,8 +165,11 @@
   },
   "active": "7c71fc90e6c8fe39",
   "lastOpenFiles": [
-    "archlinux/pacman/mirrorlist.md",
+    "archlinux/rEFInd.md",
+    "Untitled.md",
+    "archlinux/installation.md",
     "archlinux/pacman/fix-GPGME-error.md",
+    "archlinux/pacman/mirrorlist.md",
     "shell/zsh.md",
     "react.js/01_intro.md"
   ]
