@@ -192,7 +192,7 @@ sudo pacman -S networkmanager
 sudo systemctl enable networkmanager.service
 ```
 
-### Install and configure nvidia drivers
+### Install and configure NVIDIA drivers
 
 ```bash
 sudo pacman -S linux-headers
