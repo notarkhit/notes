@@ -61,7 +61,7 @@ swapon /dev/swap-partition
 
 ```
 
-### Update mirrorlist
+### Update [[mirrorlist]]
 
 ```bash
 
@@ -132,7 +132,7 @@ systemctl enable fstrim.timer
 
 ### enable 32 bin support
 
-> uncommnet multilib from /etc/pacman.conf then synchronize database
+> uncomment multilib from /etc/pacman.conf then synchronize database
 
 ### SET ROOT PASSWORD and add user
 
@@ -150,6 +150,8 @@ passwd usename
 > uncomment #%wheel ALL=(ALL) ALL
 
 ### install bootloader
+
+> for installing rEFInd instead go to [[rEFInd]]
 
 verify boot mode
 
