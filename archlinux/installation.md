@@ -147,7 +147,7 @@ passwd usename
 
 ### edit sudoers file
 
-> uncomment wheel
+> uncomment #%wheel ALL=(ALL) ALL
 
 ### install bootloader
 
