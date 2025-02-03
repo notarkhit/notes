@@ -53,7 +53,7 @@ mkswap /dev/swap-partition
 
 ```bash
 
-mount /dev/root-partition
+mount /dev/root-partition /mnt
 
 mount --mkdir /dev/esp /mnt/boot
 
