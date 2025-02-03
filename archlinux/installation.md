@@ -43,9 +43,9 @@ exit
 
 ```bash
 
-mkfs.fat -F 32 /dev/esp
-mkfs.ext4 /dev/root-partition
-mkswap /dev/swap-partition
+mkfs.fat -F 32 /dev/esp  
+mkfs.ext4 /dev/root-partition  
+mkswap /dev/swap-partition  
 
 ```
 
@@ -53,11 +53,11 @@ mkswap /dev/swap-partition
 
 ```bash
 
-mount /dev/root-partition /mnt
+mount /dev/root-partition /mnt  
 
-mount --mkdir /dev/esp /mnt/boot
+mount --mkdir /dev/esp /mnt/boot  
 
-swapon /dev/swap-partition
+swapon /dev/swap-partition  
 
 ```
 
@@ -166,9 +166,9 @@ vim /boot/loader/entries/arch.conf
 
 > add the following to arch.conf
 
-title Arch
-linux /vmlinux-linux
-initrd /initramfs-linux.img
+title Arch  
+linux /vmlinux-linux  
+initrd /initramfs-linux.img  
 
 >add root partuuid  to arch.conf
 
