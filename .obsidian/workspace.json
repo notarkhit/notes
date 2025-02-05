@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1fa12a14aa2f4598",
+        "id": "66bb37681de88c88",
         "type": "tabs",
         "children": [
           {
-            "id": "7c71fc90e6c8fe39",
+            "id": "a0c107411d159c23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "archlinux/hyprland.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "hyprland"
+              "title": "New tab"
             }
           }
         ]
@@ -163,13 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c71fc90e6c8fe39",
+  "active": "a0c107411d159c23",
   "lastOpenFiles": [
+    "archlinux/hyprland.md",
     "shell/zsh.md",
     "archlinux/pacman/fix-GPGME-error.md",
     "archlinux/pacman/mirrorlist.md",
     "archlinux/installation.md",
-    "archlinux/hyprland.md",
     "archlinux/rEFInd.md",
     "Untitled.md",
     "react.js/01_intro.md"
