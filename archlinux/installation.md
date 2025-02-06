@@ -31,7 +31,7 @@ exit
 
 > partition the disks using gptfdisk 
 
-#### Pertitioning schme
+#### Partitioning schme
 
 | Partition | Partition           | Size                      | File System          |
 |-----------|---------------------|---------------------------|----------------------|
@@ -130,7 +130,7 @@ echo "hostname" > /etc/hostname
 systemctl enable fstrim.timer
 ```
 
-### enable 32 bin support
+### enable 32 bit support
 
 > uncomment multilib from /etc/pacman.conf then synchronize database
 
@@ -142,7 +142,7 @@ passwd
 
 #add user
 useradd -m -g users -G wheel,storage,power -s /bin/bash username
-passwd usename
+passwd username
 ```
 
 ### edit sudoers file
@@ -199,7 +199,7 @@ sudo systemctl enable networkmanager.service
 ```bash
 sudo pacman -S linux-headers
 
-sudo pacman -S nvidia-dkms libglvnd nvidia-utils opencl-nvidia lib32-libglvn lib-32-nvidia-utils lib32-opencl-nvidia nvidia-settings
+sudo pacman -S nvidia-dkms libglvnd nvidia-utils opencl-nvidia lib32-libglvnd lib32-nvidia-utils lib32-opencl-nvidia nvidia-settings
 ```
 
 ### Add mkinitcpio modules
