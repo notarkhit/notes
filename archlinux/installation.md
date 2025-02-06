@@ -216,7 +216,7 @@ MODULES = (nvidia nvidia_modeset nvidia_uvm nvidia_drm )
 ```
 
 ### Edit /boot/loader/entries/arch.conf
-add this afer rw in options
+add this after rw in options
 
 ```
 options = root=PARTUUID={root partition uuid} rw nvidia-drm.modeset=1
