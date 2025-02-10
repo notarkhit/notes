@@ -11,13 +11,28 @@
             "id": "a0c107411d159c23",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "archlinux/pacman/fix-GPGME-error.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "fix-GPGME-error"
+            }
+          },
+          {
+            "id": "83fdda05e8b082e9",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -159,15 +174,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0c107411d159c23",
+  "active": "83fdda05e8b082e9",
   "lastOpenFiles": [
+    "archlinux/pacman/fix-GPGME-error.md",
+    "archlinux/pacman/Database lock error.md",
+    "archlinux/pacman/mirrorlist.md",
     "archlinux/hyprland.md",
     "shell/zsh.md",
-    "archlinux/pacman/fix-GPGME-error.md",
-    "archlinux/pacman/mirrorlist.md",
     "archlinux/installation.md",
     "archlinux/rEFInd.md",
-    "Untitled.md",
     "react.js/01_intro.md"
   ]
 }

@@ -16,3 +16,4 @@ reboot
  sudo pacman -Syu
 ```
 
+>  Do this when getting [[[Database lock error]]].
