@@ -176,14 +176,14 @@
   },
   "active": "83fdda05e8b082e9",
   "lastOpenFiles": [
+    "archlinux/pacman/mirrorlist.md",
+    "archlinux/installation.md",
+    "archlinux/hyprland.md",
+    "archlinux/rEFInd.md",
     "archlinux/pacman/Database-lock-error.md",
     "archlinux/pacman/fix-GPGME-error.md",
     "archlinux/pacman/Database lock error.md",
-    "archlinux/pacman/mirrorlist.md",
-    "archlinux/hyprland.md",
     "shell/zsh.md",
-    "archlinux/installation.md",
-    "archlinux/rEFInd.md",
     "react.js/01_intro.md"
   ]
 }
