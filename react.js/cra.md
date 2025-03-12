@@ -3,29 +3,31 @@
 ```bash
 bun create vite @ latest
 ```
+
 ---
-❯ bun create vite@latest
-✔ Project name: … vite-project
-? Select a framework: › - Use arrow-keys. Return to submit.
-    Vanilla
-    Vue
-❯   React
-    Preact
-    Lit
-    Svelte
-    Solid
-    Qwik
-    Angular
-    Others
-    ---
+
+❯ bun create vite@latest  
+✔ Project name: … vite-project  
+? Select a framework: › - Use arrow-keys. Return to submit.  
+    Vanilla  
+    Vue  
+❯   React  
+    Preact  
+    Lit  
+    Svelte  
+    Solid  
+    Qwik  
+    Angular  
+    Others  
 
     ---
-    ? Select a variant: › - Use arrow-keys. Return to submit.
-    TypeScript
-    TypeScript + SWC
-❯   JavaScript
-    JavaScript + SWC
-    React Router v7 ↗
+
+    ? Select a variant: › - Use arrow-keys. Return to submit.  
+    TypeScript  
+    TypeScript + SWC  
+❯   JavaScript  
+    JavaScript + SWC  
+    React Router v7 ↗  
 
 ---
 
@@ -38,9 +40,9 @@ bun run dev
 ---  
   VITE v6.2.0  ready in 124 ms
 
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h + enter to show help
+  ➜  Local:   http://localhost:5173/  
+  ➜  Network: use --host to expose  
+  ➜  press h + enter to show help  
 
   Shortcuts
   press r + enter to restart the server
