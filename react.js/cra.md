@@ -38,17 +38,18 @@ bun run dev
 ```
 
 ---  
+
   VITE v6.2.0  ready in 124 ms
 
   ➜  Local:   http://localhost:5173/  
   ➜  Network: use --host to expose  
   ➜  press h + enter to show help  
 
-  Shortcuts
-  press r + enter to restart the server
-  press u + enter to show server url
-  press o + enter to open in browser
-  press c + enter to clear console
+  Shortcuts  
+  press r + enter to restart the server  
+  press u + enter to show server url  
+  press o + enter to open in browser  
+  press c + enter to clear console  
   press q + enter to quit  
 
 ---  
