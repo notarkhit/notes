@@ -4,35 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "66bb37681de88c88",
+        "id": "c7f220b3a2d8c0f9",
         "type": "tabs",
         "children": [
           {
-            "id": "a0c107411d159c23",
+            "id": "88e5e11913806228",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archlinux/pacman/fix-GPGME-error.md",
+                "file": "react.js/cra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fix-GPGME-error"
-            }
-          },
-          {
-            "id": "83fdda05e8b082e9",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "cra"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -174,14 +163,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83fdda05e8b082e9",
+  "active": "88e5e11913806228",
   "lastOpenFiles": [
-    "archlinux/pacman/mirrorlist.md",
-    "archlinux/installation.md",
-    "archlinux/hyprland.md",
-    "archlinux/rEFInd.md",
-    "archlinux/pacman/Database-lock-error.md",
     "archlinux/pacman/fix-GPGME-error.md",
+    "archlinux/rEFInd.md",
+    "archlinux/hyprland.md",
+    "archlinux/pacman/mirrorlist.md",
+    "archlinux/pacman/Database-lock-error.md",
+    "archlinux/installation.md",
     "archlinux/pacman/Database lock error.md",
     "shell/zsh.md",
     "react.js/01_intro.md"

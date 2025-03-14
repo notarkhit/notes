@@ -40,4 +40,4 @@ In order to start with a shortlist of up-to-date mirrors based in some countries
 $ curl -s "https://archlinux.org/mirrorlist/?country=FR&country=GB&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -
 ```
 
-## This method can also be used on a new archlinux [[installation]] 
+## This method can also be used on a new  [[installation]] of archlinux
