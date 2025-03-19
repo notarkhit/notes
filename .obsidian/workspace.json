@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "ee4f541fc0527d5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "python/@ decorator in python.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "@ decorator in python"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,8 +178,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d72d780542ff4eb",
+  "active": "ee4f541fc0527d5b",
   "lastOpenFiles": [
+    "README.md",
+    "python/@ decorator in python.md",
+    "python",
     "archlinux/rEFInd.md",
     "title.md",
     "react.js/cra.md",
