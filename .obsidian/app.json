@@ -1,5 +1,6 @@
 {
   "spellcheck": false,
   "tabSize": 2,
-  "vimMode": true
+  "vimMode": true,
+  "promptDelete": false
 }

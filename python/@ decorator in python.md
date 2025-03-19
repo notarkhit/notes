@@ -27,3 +27,10 @@ Hello!
 After the function call
 
 ```
+
+
+## Built-in decorators
+
+@classmethod
+@property
+
