@@ -31,6 +31,6 @@ After the function call
 
 ## Built-in decorators
 
-@classmethod
-@property
+[[classmethod|@classmethod]]
+[[property|@property]]
 
