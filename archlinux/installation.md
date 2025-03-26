@@ -6,6 +6,8 @@ This document is a guide for installing Arch Linux using the live system booted 
 
 Before installing, it would be advised to view the [FAQ](https://wiki.archlinux.org/title/Frequently_asked_questions). For conventions used in this document, see [Help:Reading](https://wiki.archlinux.org/title/Help:Reading). In particular, code examples may contain placeholders (formatted in italics) that must be replaced manually.
 
+---
+
 ## 1. Pre installation
 
 ### connect to the internet
@@ -27,17 +29,18 @@ exit
 
 ```
 
+---
 ### Partition the disks
 
 > partition the disks using gptfdisk 
 
 #### Partitioning schme
 
-| Partition | Partition           | Size                      | File System          |
-|-----------|---------------------|---------------------------|----------------------|
-| /boot     | /dev/esp            | 1 GiB                     | EFI System Partition |
-| swap      | /dev/swap-partition | 16 GiB                    | Linux Swap           |
-| / (root)  | /dev/root-partition | Remainder of the device   | Linux File System    |
+| Partition | Partition           | Size                    | File System          |
+| --------- | ------------------- | ----------------------- | -------------------- |
+| /boot     | /dev/esp            | 1 GiB                   | EFI System Partition |
+| swap      | /dev/swap-partition | 16 GiB                  | Linux Swap           |
+| / (root)  | /dev/root-partition | Remainder of the device | Linux File System    |
 
 ### Format the partitions 
 
@@ -61,6 +64,7 @@ swapon /dev/swap-partition
 
 ```
 
+---
 ### Update [[mirrorlist]]
 
 ```bash
@@ -74,6 +78,8 @@ rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 
 ```
 
+---
+
 ## 2. Installation
 
 ### Install essential packages
@@ -83,6 +89,8 @@ rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 pacstrap -K /mnt base linux linux-firmware base-devel
 
 ```
+
+---
 ## 3. Configure the system
 
 ### Fstab
@@ -110,6 +118,7 @@ echo LANG=en_US.UTF-8 > /etc/locale.conf
 export LANG=en_US.UTF-8
 ```
 
+---
 ### set timezones
 
 ```bash
@@ -132,6 +141,8 @@ systemctl enable fstrim.timer
 
 ### enable 32 bit support
 
+---
+
 > uncomment multilib from /etc/pacman.conf then synchronize database
 
 ### SET ROOT PASSWORD and add user
@@ -149,6 +160,7 @@ passwd username
 
 > uncomment #%wheel ALL=(ALL) ALL
 
+---
 ### install bootloader
 
 > for installing rEFInd instead go to [[rEFInd]]
@@ -178,6 +190,7 @@ initrd /initramfs-linux.img
 echo "options root=PARTUUID=$(blkid -s PARTUUID -o value /dev/root-partition) rw" >> /boot/loader/entries/arch.conf
 ```
 
+---
 ### configure internet
 
 enable dhcpcd
@@ -202,6 +215,7 @@ sudo pacman -S linux-headers
 sudo pacman -S nvidia-dkms libglvnd nvidia-utils opencl-nvidia lib32-libglvnd lib32-nvidia-utils lib32-opencl-nvidia nvidia-settings
 ```
 
+---
 ### Add mkinitcpio modules
 
 > edit mkinitcpio.conf 
@@ -222,6 +236,7 @@ add this after rw in options
 options = root=PARTUUID={root partition uuid} rw nvidia-drm.modeset=1
 ```
 
+---
 ### pacman hooks for nvidia
 
 ```bash
@@ -252,6 +267,7 @@ NeedsTargets
 Exec=/bin/sh -c 'while read -r trg; do case $trg in linux*) exit 0; esac; done; /usr/bin/mkinitcpio -P'
 ```
 
+---
 ## 4. Reboot
 
 ```bash
